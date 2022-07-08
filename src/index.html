@@ -5,35 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-
-    <div class="photo-card">
-      <!-- <img src="" alt="" loading="lazy" /> -->
-      <div class="info">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
+    <div class="conteiner">
+      <div class="header">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button type="submit">Search</button>
+        </form>
       </div>
     </div>
+    <div class="gallery"></div>
+
     <button type="button" class="load-more">Load more</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
+
+<!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="header">
+        <form class="search-form" id="search-form">
+          <input
+            class="form_input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="buttons-conteiner">
+          <form>
+            <p class="choose">Choose a method:</p>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                class="button"
+                value="button"
+                checked
+              />
+              Button
+            </label>
+            <label>
+              <input type="radio" name="color" class="scroll" value="scroll" />
+              Scroll
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="gallery">
+        <!-- Картки зображень -->
+<!-- </div>
+      <button type="button" class="load-more">Load more</button>
+      <div id="back_to_top" class="back-to-top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="transform: rotate(270deg)"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="white"
+        >
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        </svg>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html> -->
+-->
