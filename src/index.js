@@ -11,7 +11,8 @@ const more = document.querySelector('.load-more');
 submit.innerHTML = searchSvg;
 
 
-// let valueOfInput = '';
+let valueOfInput = '';
+console.log(valueOfInput.trim());
 const axios = require('axios');
 
 axios.defaults.baseURL = 'https://pixabay.com/api/';
@@ -23,7 +24,7 @@ more.addEventListener('click', moreImagesPlz);
 
 const option = {
     key: '28290487-08acef9b94dbac81dafc26654',
-    q: '',
+    q: valueOfInput,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
